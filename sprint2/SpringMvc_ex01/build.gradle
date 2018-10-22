@@ -1,13 +1,13 @@
 buildscript {
     ext {
-        springBootVersion = '2.0.4.RELEASE'
+        springBootVersion = '1.5.6.RELEASE'
     }
     repositories {
         mavenCentral()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
-		classpath("org.springframework:springloaded:1.2.8.RELEASE")
+		classpath("org.springframework:springloaded:1.2.7.RELEASE")
     }
 }
 
@@ -35,11 +35,16 @@ eclipse {
 	}
 }
 
+task wrapper(type: Wrapper) {
+	gradleVersion = '4.1'
+}
+
 
 // tag::versions[]
 ext {
-	jasperVersion = '9.0.10'
-	groovyVersion = '2.4.15'
+	jasperVersion = '9.0.0.M26'
+	lombokVersion = '1.16.18'
+	groovyVersion = '2.4.4'
 	spockVersion = '1.1-groovy-2.4'
 }
 // end::versions[]
@@ -47,7 +52,9 @@ ext {
 dependencies {
 	// Spring Boot
 	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
-	compile("org.springframework.boot:spring-boot-devtools:${springBootVersion}")
+	compile("org.springframework.boot:spring-boot-devtools")
+	// Lombok
+	compile("org.projectlombok:lombok:$lombokVersion")
 	// JSP
 	compile("org.apache.tomcat.embed:tomcat-embed-jasper:$jasperVersion")
 	compile("javax.servlet:jstl:1.2")
