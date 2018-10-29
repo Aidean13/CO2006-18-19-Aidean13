@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 	
-	@RequestMapping("/hello")
-	 public String hello(Model model) {
-	      model.addAttribute("name", "World");
-	      return "hello";
-	  }   
+	// ADD YOUR REQUEST MAPPING AND METHOD HERE
+	
 }

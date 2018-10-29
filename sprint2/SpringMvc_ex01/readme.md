@@ -12,7 +12,7 @@ In this exercise, you are offered two paths to solve it:
 * the direct way, in which the project is already configured for you on GitHub, you only have to fetch it, explore its structure and complete the code; and
 * the hard way, in which you can follow all the steps in the tutorial and build your first web application from scratch.
 
-For the hard way, jump to section [Setting the MVC infrastructure (the hard way)](https://github.com/uol-inf/CO2006-17-18/tree/master/sprint2/SpringMvc_ex01#setting-the-mvc-infrastructure-the-hard-way). Otherwise, keep on reading.
+For the hard way, jump to section [Setting the MVC infrastructure (the hard way)](#setting-the-mvc-infrastructure-the-hard-way). Otherwise, keep on reading.
 
 ## Setting the MVC infrastructure (the direct way)
 * Pull the last commit from the main repository on GitHub and import the project `sprint2/SpringMvc_ex01` as an **Eclipse project** in the STS.
@@ -78,7 +78,7 @@ The file `src/main/resources/application.properties` is used to configure parame
 * Terminate the web application graciously with `CTRL-C` in the terminal console
 
 
-
+(#setting-the-mvc-infrastructure-the-hard-way)
 ## Setting the MVC infrastructure (the hard way) 
 
 ### Configuring your application
@@ -90,7 +90,7 @@ The file `src/main/resources/application.properties` is used to configure parame
 		compile("javax.servlet:jstl:1.2")
 		
 * Create a folder `src/main/webapp`, which is the root folder for the resources of your web application. Create the following subfolders `WEB-INF/views/` in it.
-* In folder `src/main/java/yourpackage/`, create a class `WebConfig.java`: define it as a configuration class by tagging it with the annotation `@Configuration` and define it as a specialized class of the class `WebMvcConfigurerAdapter` by adding `extends WebMvcConfigurerAdapter` to the class declaration and add the following code to the application class 
+* In folder `src/main/java/yourpackage/`, create a class `WebConfig.java`: define it as a configuration class by tagging it with the annotation `@Configuration` and define it as a specialized class of the class `WebMvcConfigurerAdapter` by adding `extends WebMvcConfigurerAdapter` to the class declaration and add the following code to this configuration class 
 
 		package labMVC;
 		
@@ -179,10 +179,21 @@ That's it! Your application is ready!
 Build an executable jar with the following command on the terminal console
 
 		./gradlew bootRepackage
+    
+If this fails (depends on gradle version), use:
+
+		./gradlew bootJar
 		
 The resulting jar file is a fat jar that contains all the libraries that are needed to execute the application. This file is produced in folder */build/libs* and can be copied and distributed how you prefer (e.g. by using a cloud platform). To execute the application using the jar file, just use the typical command
 
 		java -jar <your project name>.jar 
+
+
+
+## Configure Pluralsight exercises
+
+Download the exercises used in the course **Spring MVC Fundamentals** (click on title and then download exercises from tab `Exercise files`)  on Pluralsight and configure them in Gradle using this [migration guide](./../MigratingToGradle.md).
+
 
 ## Additional Resources
 
