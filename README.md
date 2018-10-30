@@ -71,10 +71,12 @@ The goal for this sprint is a test on agile practices in software development, G
 
 The goal of this Sprint is to develop a web application. 
 
-* :dart: [mini project worksheet](./miniproject.md) (the link will not work until the worksheet is released):
+* :dart: [mini project worksheet](./sprint2/miniproject.md) (the link will not work until the worksheet is released):
   * **marks: 100, weight: 20%** of overall mark
-  * [checkpoint and effort](): **Tue 30 Oct, 23:59, weight 10% of sprint 2**
-  * [release](): **Tue 6 Nov, 23:59, weight 90% of sprint 2**
+  * exercises in the lab: **after each session, weight 5% of sprint 2**
+  * :movie_camera: [explanation of worksheet](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=782c2163-8da7-4ac6-ac1e-a98600b626f8)
+  * [checkpoint](./sprint2/miniproject.md#checkpoint): **Tue 30 Oct, 23:59, weight 5% of sprint 2**
+  * [release](./sprint2/miniproject.md#release): **Tue 6 Nov, 23:59, weight 90% of sprint 2**
 * :loudspeaker: [solution miniproject (source code)]() (TBA)
   * [feedback form]()
 
@@ -82,11 +84,12 @@ The goal of this Sprint is to develop a web application.
 |--|--|--|--|--|
 | Introduction to Spring MVC				|  |  | | :movie_camera: [lecture](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b9485004-f43e-4da0-bd86-a97d00f85ec6), <br/>  :notebook_with_decorative_cover: [slides](./lectureNotes/sprint2.lecture.pdf) | 
 | Spring MVC (basics)					| :movie_camera: [Introduction to Spring MVC (16:56)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m1-intro&clip=0&mode=live)<br/>:movie_camera: [Architecture (12:25)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m3-architecture&clip=0&mode=live) :movie_camera: [webcast](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=22d81fc5-c1fd-491f-a703-a97e008a7f9a)| :computer: [worksheet](./sprint2/SpringMvc_ex01/readme.md) | :computer: [solution](./sprint2/SpringMvc_ex01_solution/)  | | 
-| Controllers (request mappings) 		| <br/> :movie_camera: [Controllers - request mappings (21:00)](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=36f7f901-8ec8-4281-8b18-a980014228bd) <br/> | :computer: [worksheet](./sprint2/SpringMvc_ex02/readme.md) | <!-- :computer: [solution](./sprint2/SpringMvc_ex02_solution/) --> | :notebook_with_decorative_cover: [slides](./lectureNotes/sprint2.lab2.handouts.pdf), <br/> :notebook_with_decorative_cover: lecture notes ([PDF](./lectureNotes/sprint2.lab2.pdf), [HTML](./lectureNotes/sprint2.lab2.md)), <br/> :movie_camera: [Controllers (27:54)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m4-controllers&clip=0&mode=live)  |
-| Views (JSP, JSTL)						| :movie_camera: [Views (18:06)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m5-views&clip=0&mode=live) | :computer: [worksheet]() | <!--  :computer: [solution]() --> | |
-| Controllers (forms)			 		| :movie_camera: [Forms and POST requests](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=36f7f901-8ec8-4281-8b18-a980014228bd) | :computer: [worksheet](./sprint2/SpringMvc_ex03/readme.md) | <!-- :computer: [solution](./sprint2/SpringMvc_ex03_solution/) --> |  |
-| Spring MVC (master/detail)						| :movie_camera: [Tag libraries (37:52)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m6-tags&clip=0&mode=live) | :computer: [worksheet](./sprint2/SpringMvc_ex04/readme.md) | <!-- :computer: [solution](./sprint2/SpringMvc_ex04_solution/) --> | |
-| Spring Validation 						| :movie_camera: [Validation (23:22)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m7-validation&clip=0&mode=live) | :computer: [worksheet](./sprint2/SpringMvc_ex05/readme.md) | <!-- :computer: [solution](./sprint2/SpringMvc_ex05_solution/) --> | |
+| Controllers (request mappings) 		| <br/> :movie_camera: [Controllers - request mappings (21:00)](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=36f7f901-8ec8-4281-8b18-a980014228bd) <br/> | :computer: [worksheet](./sprint2/SpringMvc_ex02/readme.md) | :computer: [solution](./sprint2/SpringMvc_ex02_solution/) | :notebook_with_decorative_cover: [slides](./lectureNotes/sprint2.lab2.handouts.pdf), <br/> :notebook_with_decorative_cover: lecture notes ([PDF](./lectureNotes/sprint2.lab2.pdf), [HTML](./lectureNotes/sprint2.lab2.md)), <br/> :movie_camera: [Controllers (27:54)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m4-controllers&clip=0&mode=live)  |
+| Views (JSP, JSTL)						| :movie_camera: [MVC and design principles (27:34)](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7871e274-b7bf-4f84-901c-a98200e2e2b4) | :computer: [worksheet](./sprint2/SpringMvc_ex02b) | :computer: [solution](./sprint2/SpringMvc_ex02b_solution) | :notebook_with_decorative_cover: [slides](./lectureNotes/sprint2.lab3.handouts.pdf), <br/> :movie_camera: [Views (~4:00)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m5-views&clip=0&mode=live) (skip: chaining, resolving static files) |
+| Controllers (forms)			 		| :movie_camera: [Forms and POST requests (30:45)](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f7f35297-4376-418e-b7f8-a98401895282) | :computer: [worksheet 1 (lecture exercises)](./sprint2/SpringMvc_ex03b/readme.md),<br/>:computer: [worksheet 2](./sprint2/SpringMvc_ex03/readme.md) | :computer: [solution](./sprint2/SpringMvc_ex03_solution/) | :notebook_with_decorative_cover: [slides](./lectureNotes/sprint2.lab3.handouts.pdf)  |
+| Spring MVC (master/detail)						| :movie_camera: [Master/detail views (36:58)](https://leicester.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1a9e3a03-7534-436f-a08c-a987016e43a7) | :computer: [worksheet](./sprint2/SpringMvc_ex04/readme.md) | :computer: [demo solution](./sprint2/SpringMvc_ex04_demo_solution/),<br/>:computer: [worksheet solution](./sprint2/SpringMvc_ex04_solution/) | :notebook_with_decorative_cover: [slides](./lectureNotes/sprint2.lab5.handouts.pdf) |
+| Checkpoint 						| :movie_camera: [demo]() |  | | |
+| Spring Validation 						| :movie_camera: [Spring Validation]()  | :computer: [worksheet](./sprint2/SpringMvc_ex05/readme.md) | <!-- :computer: [solution](./sprint2/SpringMvc_ex05_solution/) --> | :movie_camera: [Validation (23:22)](https://app.pluralsight.com/player?course=springmvc-intro&author=bryan-hansen&name=springmvc-m7-validation&clip=0&mode=live) |
 
 
 <details><summary><b>Sprint 3</b> (click me to expand)</summary>
@@ -179,8 +182,11 @@ The goal of this Sprint is to develop a web application:
 
 The tools that we are going to use in this module are reported [here](./tooling.md)   
 
+### FAQ
+
+The document with **frequently asked questions** is [here](./faq.md).
 
 
 
 
-
+# CO2006-18-19-Aidean13

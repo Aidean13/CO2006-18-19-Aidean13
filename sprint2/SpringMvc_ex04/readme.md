@@ -46,7 +46,11 @@ Add the following methods to the class `IndexController.java`:
   * else, the identifier of `product` is set to `SimpleProduct.lastIdSimpleProduct.lastId`
 * `public String addProduct(@ModelAttribute("product") SimpleProduct product, Model model)`: creates a product when clicking on `Submit` 
   * add the `@RequestMapping` for a `POST "/addProduct"` request when the `Submit` button is clicked 
+<<<<<<< HEAD
   * the product with id `productId` is removed from `productList`
+=======
+  * the product with id `productId` is added to `productList`
+>>>>>>> 0c454e1ef173fb7da322442522b5e034438883cd
   * a new product with information in the form is added to `productList`
   * the master view must display the resulting list of products
 * `public String deleteProduct(@RequestParam(value="productId", required=false, defaultValue="-1") int productId, Model model)`: deletes a product

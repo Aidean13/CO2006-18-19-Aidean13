@@ -26,6 +26,7 @@ public class IndexController {
     }
     
     //TODO: @RequestMapping
+<<<<<<< HEAD
     @RequestMapping(value = "/productDetail", method = RequestMethod.GET)
     public String productDetail(@ModelAttribute("product") SimpleProduct product, @RequestParam(value="productId", required=false, defaultValue="-1") int productId) {
     	// TODO: exercise
@@ -41,6 +42,11 @@ if (productId >= 0) {
 	SimpleProduct.lastId++;
 
 }
+=======
+    public String productDetail(@ModelAttribute("product") SimpleProduct product, @RequestParam(value="productId", required=false, defaultValue="-1") int productId) {
+    	// TODO: exercise
+
+>>>>>>> 0c454e1ef173fb7da322442522b5e034438883cd
     	return "form/detail";
     }   
     
